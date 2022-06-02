@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: url(https://wallpaperaccess.com/full/2901779.jpg) no-repeat center;
+  background-size: cover;
+  z-index: 3;
+}
+
+.main__title {
+  color: #fff;
+  font-size: 52px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.overlay {
+  width: 2%;
+  height: 100%;
+  z-index: 4;
+  position: relative;
+  background: url(https://cdn.wallpapersafari.com/52/95/2CDKwd.png) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  transition: 1.2s linear;
+}
+
+.overlay:hover {
+  transition: 0s linear;
+  opacity: 0;
+}
